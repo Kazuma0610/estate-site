@@ -1,0 +1,138 @@
+@use "variable" as v;
+@use "mixin" as m;
+
+/*-------------------------------------------
+aside
+-------------------------------------------*/
+#sidebar {
+    width: 100%;
+    padding: 5px;
+    @include m.breakpoint(only-tab){
+        width: 33%;
+        padding: 20px;
+       }
+    .author {
+        text-align: center;
+        margin-bottom: 60px;
+        padding: 10px;
+        img{
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            margin-bottom: 30px;
+        }
+        .side-title{
+            font-size: 1.125rem;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+        .profile{
+            font-size: 0.875rem;
+            text-align: left;
+        }
+      }
+    .archive {
+        margin:20px auto;
+        text-align: center;
+        .side-title{
+            text-align: left;
+            padding: 0px;
+        }
+        .wp-block-latest-posts{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            padding: 10px;
+            @include m.breakpoint(tablet){
+                justify-content: flex-start;
+               }
+            @include m.breakpoint(only-tab){
+                display: block;
+                padding: 0px;
+               }
+            li{
+                max-width: 150px;
+                font-size: 0.875rem;
+                /*border-bottom: solid  1px #777;*/
+                padding: 0px;
+                padding-bottom: 20px;
+                text-align: left;
+                &:nth-child(4){
+                    padding-bottom: 0px;
+                }
+                @include m.breakpoint(only-tab){
+                    max-width: 170px;
+                   }
+            }
+        }
+        .wp-block-categories{
+            text-align: left;
+            li{
+                .children{
+                    li{
+                        padding-left: 20px;
+                    }
+                }
+            }  
+        }
+        .news-area-content-sd{
+            width: 100%;
+            text-align: left;
+            h3{
+                font-size: 1rem;
+                font-weight: bold;
+                margin-top: 20px;
+                .fa-newspaper{
+                    margin-right: 5px;
+                }
+            }
+            ul{
+                li{
+                    padding-top: 20px;
+                    padding-top: 10px;
+                    border-bottom: 1px dotted;
+                    .news_date{
+                        font-size: 0.7rem;
+                    }
+                    .news_title{
+                        font-size: .875rem;
+                    }
+                }
+            }
+        }
+    }
+  }
+  
+/*ウィジェット内の変更*/
+.widget-title{
+    text-align: left;
+    margin-top: 20px;
+    .fa-book{
+        margin-right: 5px;
+    }
+    .fa-layer-group{
+        margin-right: 5px;
+    }
+}
+
+/*-------------------------------------------
+aside(RENT用）
+-------------------------------------------*/
+
+#sidebar-rent{
+    width: 100%;
+    padding: 15px;
+    @include m.breakpoint(only-tab){
+        width: 33%;
+        padding: 20px;
+       }
+    .archive {
+        margin:0 auto;
+        text-align: center;
+        .side-title{
+            text-align: left;
+            padding: 0px;
+        }
+        }
+}

@@ -1,0 +1,19 @@
+@use "variable" as v;
+@use "mixin" as m;
+
+.page-404{
+    text-align: center;
+    .title-header{
+        font-size: 2rem;
+        @include m.breakpoint(tablet){
+            font-size: 5rem;
+        }
+    }
+    .p-404{
+        margin-top: 64px;
+    }
+    .top-link{
+        display: block;
+        margin: 32px 0;
+    }
+}

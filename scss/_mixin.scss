@@ -1,0 +1,58 @@
+/*レスポンシブル*/
+@mixin breakpoint($point) {
+	@if $point == mini {
+		@media (min-width: 25rem) {
+			@content;
+		}
+	}
+	@if $point == tablet {
+		@media (min-width: 48rem) {
+			@content;
+		}
+	}
+    @if $point == only-tab {
+		@media (min-width: 55rem) {
+			@content;
+		}
+	}
+	@if $point ==ipad-pro {
+		@media (min-width: 62.5rem) {
+			@content;
+		}
+	}
+	@if $point == pc {
+		@media (min-width: 64.375rem) {
+			@content;
+		}
+	}
+	@if $point == other {
+		@media (min-height: 50rem) {
+			@content;
+		}
+	}
+	@if $point == nest-hub {
+		@media (max-height: 40.625rem) {
+			@content;
+		}
+	}
+	@if $point == nest-hub-max {
+		@media (max-height: 53.125rem) {
+			@content;
+		}
+	}
+    @if $point == only-tab-max {
+		@media (max-width: 64.375rem) {
+			@content;
+		}
+	}
+	@if $point ==surface-duo {
+		@media (max-width: 34.375rem) {
+			@content;
+		}
+	}
+	@if $point ==tablet-width {
+		@media (max-width: 57rem) {
+			@content;
+		}
+	}
+}

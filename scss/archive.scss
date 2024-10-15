@@ -1,0 +1,77 @@
+@use "variable" as v;
+@use "mixin" as m;
+
+.contents{
+    .page-title{
+        margin: 0;
+    }
+    .page-title-archive{
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+    }
+    .archive-flex{
+        display: flex;
+        gap: 25px;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding-bottom: 20px;
+        .entry-title{
+            font-size: .8rem;
+            @include m.breakpoint(tablet){
+                font-size: 1rem;
+               }
+        }
+        .type-post{
+            width: calc(50% - 50px / 2);
+            .card__time{
+                font-size: .8rem;
+                @include m.breakpoint(tablet){
+                    font-size: 1rem;
+                   }
+            }
+            .entry-footer{
+                font-size: .8rem;
+                @include m.breakpoint(tablet){
+                    font-size: 1rem;
+                   }
+            }
+        }
+        .archive-flex-post{
+            display: flex;
+            gap: 25px;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding-bottom: 20px;
+            margin-top: 30px;
+        }
+        .archive-rent{
+            margin-top: -50px;
+        }
+        .type-news{
+            width: calc(50% - 50px / 2);
+            .entry-title{
+                font-size: .8rem;
+                @include m.breakpoint(tablet){
+                    font-size: 1rem;
+                   }
+            }
+            .card__time{
+                font-size: .8rem;
+                @include m.breakpoint(tablet){
+                    font-size: 1rem;
+                   }
+            }
+            .cat-links{
+                font-size: .8rem;
+                @include m.breakpoint(tablet){
+                    font-size: 1rem;
+                   }
+            }
+        }
+
+    }
+    .nav-links{
+        margin-top: 80px;
+        text-align: center;
+    }
+}

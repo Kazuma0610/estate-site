@@ -1,0 +1,290 @@
+@use "variable" as v;
+@use "mixin" as m;
+
+/*スマホ版*/
+.only-sp{
+    display: block;
+    @include m.breakpoint(tablet){
+        display: none;
+       }
+}
+.archive-rent_article_sp{
+    border-top: 2px solid #999999;
+    padding-top: 10px;
+    font-size: 12px;
+    .block-thumbnail-flex{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        padding: 5px;
+        .lr_l,.lr_r{
+            width: calc(50% - 10px /2);
+            margin-left: 10px;
+            .type {
+                border: 1px solid #6FBA2C;
+                color: #6FBA2C;
+                display: inline-block;
+                vertical-align: middle;
+                padding: 3px;
+                font-size: 10px;
+                line-height: 1;
+                background-color: #FFFFFF;
+            }
+        }
+    }
+    .detail{
+        .detail-flex{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 20px;
+            margin-bottom: 20px;
+            .bt-contents{
+                width: 50%!important;
+                margin-left: 10px;
+                .price{
+                    font-size: 1rem;
+                    font-weight: bold;
+                    color: red;
+                    .price-sub{
+                        font-size: .8rem;
+                        font-weight: bold;
+                        color: red;
+                    }
+                    .kanrihi{
+                        font-size: .7rem;
+                        font-weight: normal;
+                        color: red;
+                    }
+                }
+                .deposit-flex{
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                    gap: 10px;
+                    padding: 5px;
+                    .deposit{
+                        &::before{
+                            content:"敷";
+                            border: 1px solid #c2c2c2;
+                            background-color: #c2c2c2;
+                            color: #000;
+                            margin-right: 5px;
+                            padding: 2px;
+                        }
+                    }
+                    .deposit2{
+                        &::before{
+                            content:"礼";
+                            border: 1px solid #f37e00;
+                            background-color: #fff;
+                            color: #f37e00;
+                            margin-right: 5px;
+                            padding: 2px;
+                        }
+                    }
+                }
+                .size-flex{
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                    gap: 10px;
+                }
+            }
+        }
+        .bookmark-sp-list{
+            display: flex;
+            align-items: center;
+	        margin-top: -25px;
+            margin-left: 10px;
+            @include m.breakpoint(tablet){
+                display: none;
+               }
+            button{
+                color: #000;
+	            padding: 5px;
+	            font-size: .8rem;
+	            border: 1px solid #000;
+	            border-radius: 5px;
+            }
+            .bk-text{
+                position: relative;
+	            display: inline-block;
+	            margin: 1.5em 0 1.5em 15px;
+	            padding: 7px 10px;
+	            min-width: 120px;
+	            max-width: 100%;
+	            color: #555;
+	            font-size: 16px;
+	            background: #e0edff;
+                &::before{
+                    content: "";
+	                position: absolute;
+	                top: 50%;
+	                left: -20px;
+	                margin-top: -15px;
+	                border: 15px solid transparent;
+	                border-right: 15px solid #e0edff;
+                }
+                p {
+                    font-size: .6rem;
+                }
+            }
+        } 
+        .bookmark-sp-list-out{
+            .bk-text{
+                margin: 15px;
+                padding: 5px;
+                border-left: 5px solid #000;
+                background: #f4f4f4;
+                width: 70%;
+                font-size: .7rem;
+            }
+        }       
+    }
+}
+
+/*PCとタブレット版*/
+.only-tablet-pc{
+    display: none;
+    @include m.breakpoint(tablet){
+        display: block;
+       }
+}
+
+.archive-rent_article{
+    border-top: 2px solid #999999;
+    padding-top: 10px;
+    font-size: 12px;
+    .lr {
+        display: flex;
+        justify-content: flex-start;
+        gap: 10px;
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 0 5px 0 5px;
+        margin-bottom: 15px;
+        .lr_l {
+            padding-top: 30px;
+            width: 24%;
+            img{
+                width: 100%;
+                height: auto;
+            }
+          }
+        .lr_r {
+            width: 74%;
+            .type {
+                border: 1px solid #6FBA2C;
+                color: #6FBA2C;
+                display: inline-block;
+                vertical-align: middle;
+                padding: 3px;
+                font-size: 10px;
+                line-height: 1;
+                background-color: #FFFFFF;
+            }
+            .renttitle {
+                margin-top: 10px;
+                font-size: 1.3rem;
+                font-weight: bold;
+                line-height: 1.3;
+            }
+            .place {
+                margin-top: 10px;
+                border-top: 1px dotted #c2c2c2;
+                border-bottom: 1px dotted #c2c2c2;
+                padding: 5px 0;
+                ul {
+                    display: table;
+                    margin-bottom: 0;
+                    li {
+                        border-left: none;
+                        padding-left: 0;
+                        list-style: none;
+                        display: table-cell;
+                        vertical-align: top;
+                        border-left: 1px dotted #c2c2c2;
+                        box-sizing: border-box;
+                        padding: 10px;
+                     }
+                }
+            }
+            .bookmark-list{
+                display: flex;
+                align-items: center;
+                .bk-text{
+                    position: relative;
+                    display: inline-block;
+                    margin: 1.5em 0 1.5em 15px;
+                    padding: 7px 10px;
+                    min-width: 120px;
+                    max-width: 100%;
+                    color: #555;
+                    background: #e0edff;
+                    &::before{
+                        content: "";
+                        position: absolute;
+                        top: 50%;
+                        left: -25px;
+                        margin-top: -15px;
+                        border: 15px solid transparent;
+                        border-right: 15px solid #e0edff;
+                    }
+                    p{
+                        font-size: .7rem;
+                    }
+                }
+            }
+            .bookmark-list-out{
+                .bk-text{
+                    margin: 15px;
+                    padding: 5px;
+                    border-left: 5px solid #000;
+                    background: #f4f4f4;
+                    width: 70%;
+                    font-size: .7rem;
+                }
+            }
+          }
+    }
+    .detail{
+        width: 100%;
+        text-align: center;
+        border-collapse: collapse;
+        margin-bottom: 50px;
+        tr{
+            background-color: #eeeeee;
+        }
+        th {
+            font-weight: normal;
+            padding: 10px 5px;
+            box-sizing: border-box;
+            color: #666666;
+            font-size: .8rem;
+            white-space: nowrap;
+            border-bottom: none;
+        }
+        td {
+            vertical-align: middle;
+            padding: 10px 5px;
+            border-bottom: 1px solid #d9d9d9;
+            background-color: #fff;
+        }
+        .rentrent {
+            color: #f37e00;
+            font-size: 1rem;
+            font-weight: bold;
+        }
+        .rent_detail {
+            font-size: .9rem;
+            font-weight: bold;
+        }
+    }
+}
+
+
+  
+
+  

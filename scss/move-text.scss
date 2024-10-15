@@ -1,0 +1,77 @@
+@use "variable" as v;
+@use "mixin" as m;
+
+/*scss記述だと上手くいかず。CSSで記述しています*/
+
+.eachTextAnime{
+    @include m.breakpoint(pc){
+        display: block;
+        font-size: 5rem;
+        font-weight: bold;
+        color: #fff;
+        text-align: center;
+        width: 100%;
+        margin: 0 auto;
+        text-shadow: 1px 1px 2px #000000;
+        margin-top: 15%;
+      }
+    @include m.breakpoint(nest-hub-max){
+        display: block;
+        font-size: 5rem;
+        font-weight: bold;
+        color: #fff;
+        text-align: center;
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 10%;
+        text-shadow: 1px 1px 2px #000000;
+      }
+    @include m.breakpoint(only-tab-max){
+        display: block;
+        font-size: 4rem;
+        font-weight: bold;
+        color: #fff;
+        text-align: center;
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 20%;
+        text-shadow: 1px 1px 2px #000000;
+    }
+    @include m.breakpoint(tablet-width){
+      display: block;
+      font-size: 3rem;
+      font-weight: bold;
+      color: #fff;
+      text-align: center;
+      width: 100%;
+      margin: 0 auto;
+      margin-top: 30%;
+      text-shadow: 1px 1px 2px #000000;
+    }
+    @include m.breakpoint(nest-hub){
+      display: none!important;
+    }
+    @include m.breakpoint(surface-duo){
+      display: block;
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #fff;
+      text-align: center;
+      width: 100%;
+      margin: 0 auto;
+      margin-top: 30%;
+      text-shadow: 1px 1px 2px #000000;
+    }         
+}
+
+.eachTextAnime span{
+    opacity: 0;
+}
+.eachTextAnime.appeartext span{ 
+    animation:text_anime_on 1s ease-out forwards; 
+}
+@keyframes text_anime_on {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+

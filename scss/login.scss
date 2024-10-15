@@ -1,0 +1,17 @@
+@use "variable" as v;
+@use "mixin" as m;
+
+#wpmem_login{
+    width: 100%!important;
+    @include m.breakpoint(tablet){
+        padding: 0 40px 0 40px!important;
+       }
+}
+
+#wpmem_reg{
+    width: 100%!important;
+    margin: 0 auto!important;
+    @include m.breakpoint(tablet){
+        width: 90%!important;
+       }
+}

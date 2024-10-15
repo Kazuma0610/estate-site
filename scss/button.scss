@@ -1,0 +1,254 @@
+@use "variable" as v;
+@use "mixin" as m;
+
+
+/*archive-rentのボタン*/
+/*ボタン基本設定*/
+.btn,
+a.btn,
+a.btn-rent-arechive,
+button.btn {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.5;
+  position: relative;
+  display: inline-block;
+  padding: 1rem 4rem;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  color: #212529;
+  border-radius: 0.5rem;
+}
+/*22番目*/
+a.btn--cart-2 {
+  color: #fff!important;
+  background-color: #04384C;
+  width: 100%!important;
+  @include m.breakpoint(tablet){
+    width: 80%!important;
+   }
+  &:hover{
+    color: #fff;
+    background: #04384C;
+    opacity: 0.6;
+  }
+  @at-root a.btn-c-2{
+    font-size: .8rem!important;
+    position: relative;
+    padding: 15px 20px!important;
+    @include m.breakpoint(tablet){
+        padding: 1rem 1.5rem 1rem 1.5rem!important;
+       }
+  }
+  &::before{
+    font-family: 'Font Awesome 5 Free';
+    font-size: .8rem;
+    line-height: 1;
+    position: absolute;
+    top: calc(64% - .8rem);
+    right: .5rem;
+    margin: 0;
+    padding: 0;
+    content: '\f054';
+  }
+  i.fa{
+    margin-right: 1rem;
+  }
+}
+
+
+/*single-rentのボタン*/
+/*ボタンの装飾*/
+.kuusitu_b {
+    background-color: #F37E00;
+    border-bottom: 2px solid #E15F00;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-box-shadow: 0 2px 1px #d9d9d9;
+    -moz-box-shadow: 0 2px 1px #d9d9d9;
+    box-shadow: 0 2px 1px #d9d9d9;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold!important;
+    display: block;
+    padding: 8px 0 6px;
+    font-size: 15px;
+    width: 187px;
+    color: #fff;
+    line-height: 14px;
+    margin-bottom: 7px;
+    span{
+        font-size: 1rem;
+    }
+}
+ 
+
+/*お問合せボタン*/
+/*ボタン基本設定*/
+.btn,
+a.btn,
+button.btn {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.5;
+  position: relative;
+  display: inline-block;
+  padding: 1rem 4rem;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  color: #212529;
+  border-radius: 0.5rem;
+}
+/*20番目*/
+a.btn--orange-2 {
+  color: #fff;
+  background-color: #eb6100;
+  width: 100%;
+  &:hover{
+    color: #fff;
+    background: #f56500;
+    opacity: 0.6;
+  }
+  @at-root a.btn-c{
+    font-size: 1rem;
+    position: relative;
+    right: 10px;
+    padding: 20px 20px 20px 20px;
+  }
+  i.fa{
+    margin-right: 1rem;
+  }
+}
+
+/*archive-rentの「詳細検索ボタン」*/
+/*9番目*/
+a.btn-border-1 {
+  font-size: 1rem;
+  border: 1px solid #04384C;
+  border-radius: 0;
+  background: #04384C;
+  padding: 20px 30px 20px 30px;
+  font-weight: 500;
+  color: #fff;
+  .fa-search{
+    margin-right: 5px;
+  }
+   &:hover{
+    color:#000;
+    background: #fff;
+   }
+}
+
+
+/*blog-newsのボタン*/
+/*ボタン基本設定*/
+a.btn-radius-solid {
+  font-size: .8rem;
+  border: 1px solid #ccc;
+  background: #f1e767;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fdfbfb), to(#ebedee));
+  background: -webkit-linear-gradient(top, #fdfbfb 0%, #ebedee 100%);
+  background: linear-gradient(to bottom, #fdfbfb 0%, #ebedee 100%);
+  -webkit-box-shadow: inset 1px 1px 1px #fff;
+  box-shadow: inset 1px 1px 1px #fff;
+}
+
+a.btn-radius-solid:hover {
+  background: -webkit-gradient(linear, left bottom, left top, from(#fdfbfb), to(#ebedee));
+  background: -webkit-linear-gradient(bottom, #fdfbfb 0%, #ebedee 100%);
+  background: linear-gradient(to top, #fdfbfb 0%, #ebedee 100%);
+}
+
+
+/*トップに戻るアイコン*/
+a.btn--circle {
+  width: 50px;
+  height: 50px;
+  padding: 0;
+  background: #fff;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
+  @include m.breakpoint(tablet){
+    width: 60px;
+    height: 60px;
+   }
+  i{
+    font-size: 100%;
+    line-height: 50px;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+    letter-spacing: 0;
+    @include m.breakpoint(tablet){
+      font-size: 150%;
+      line-height: 60px;
+     }
+  }
+}
+a.btn--circle:hover i {
+  line-height: 55px;
+}
+
+/*動作の動き*/
+/*リンクを右下に固定*/
+#page-top {
+	position: fixed;
+	right: 10px;
+	bottom:10px;
+	z-index: 2;
+    /*はじめは非表示*/
+	opacity: 0;
+	transform: translateY(100px);
+}
+
+/*　上に上がる動き　*/
+#page-top.UpMove{
+	animation: UpAnime 0.5s forwards;
+}
+@keyframes UpAnime{
+  from {
+    opacity: 0;
+	transform: translateY(100px);
+  }
+  to {
+    opacity: 1;
+	transform: translateY(0);
+  }
+}
+
+/*　下に下がる動き　*/
+#page-top.DownMove{
+	animation: DownAnime 0.5s forwards;
+}
+@keyframes DownAnime{
+  from {
+  	opacity: 1;
+	transform: translateY(0);
+  }
+  to {
+  	opacity: 1;
+	transform: translateY(100px);
+  }
+}

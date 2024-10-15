@@ -1,0 +1,156 @@
+@use "variable" as v;
+@use "mixin" as m;
+
+
+/*モーダル内装飾*/
+.modal {
+    display: none;
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 9999;
+    @include m.breakpoint(tablet){
+        display: none;
+        height: 100vh;
+        position: fixed;
+        top: 0px;
+        width: 100%;
+        z-index: 1000;
+      }
+  }
+
+::-webkit-scrollbar{
+    display: block;
+}
+
+.modal_bg {
+    background: rgba(0, 0, 0, 0.9);
+    height: 100vh;
+    position: absolute;
+    width: 100%;
+    z-index: 100;
+  }
+
+.modalScroll{
+   position: absolute;
+   top: 40%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+    background: #fff;
+    height: 75vh;
+    width: 90%;
+    padding: 5px;
+    border-radius: 20px;
+    -ms-overflow-style: none;
+    z-index: 150;
+    overflow: hidden;
+    overflow-y: scroll;
+    @include m.breakpoint(tablet){
+        top:50%;
+        height: 65%;
+        padding-bottom: 0px;
+      }
+    @include m.breakpoint(pc){
+        height: auto;
+        width: 70%;
+      }
+    @include m.breakpoint(nest-hub){
+        height: 65%!important;
+        width: 70%;
+      }
+}
+
+::-webkit-scrollbar {
+    border-radius: 10px;
+    width: 10px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: #b6b6b6;
+    border-radius: 10px;
+  }
+
+.modal_content {
+    color: rgb(49, 49, 49);
+    text-align: center;
+}
+
+.no_scroll {
+    overflow: hidden;
+  }
+
+.popup-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 29px;
+    height: 29px;
+    display: flex;
+    border: 1px solid #fff;
+    align-items: center;
+    justify-content: center;
+    background: #ccc;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 9999;
+    @include m.breakpoint(tablet){
+        top: 20px;
+        right: 20px;
+      }
+    @include m.breakpoint(only-tab){
+        top: 30px;
+        right: 30px;
+      }
+    @include m.breakpoint(pc){
+        top: 50px;
+        right: 50px;
+      }
+  }
+
+  .popup-close:after, .popup-close:before {
+    width: 14px;
+    height: 2px;
+    content: "";
+    position: absolute;
+    left: 7px;
+    top: 12px;
+    background: #667075
+  }
+
+  .popup-close:before {
+    -ms-transform: rotate(-45deg);
+    transform: rotateZ(-45deg)
+  }
+  .popup-close:after {
+    -ms-transform: rotate(45deg);
+    transform: rotateZ(45deg)
+  }
+
+  .popup-close {
+    width: 25px;
+    height: 23px
+  }
+
+  .popup-close:after, .popup-close:before {
+    width: 11px;
+    height: 2px;
+    left: 6px;
+    top: 9px
+  }
+
+/*モーダルの中身*/
+.modal_content{
+    padding: 10px;
+    @include m.breakpoint(only-tab){
+        padding: 50px;
+      }
+    .sso_content_modal{
+        margin-top: 40px;
+        .vkfs{
+            text-align: left;
+        }
+        .simplefavorite-button{
+          display: none;
+        }
+    } 
+}
