@@ -1,0 +1,105 @@
+@charset "UTF-8";
+/*色の設定*/ /*レスポンシブル*/
+/*お問合せフォームのrent-single用*/
+.single-contact {
+  padding: 0px;
+}
+@media (min-width: 48rem) {
+  .single-contact {
+    padding: 20px;
+  }
+}
+.single-contact .contact-wrap h2 {
+  padding: 5px 10px 5px 15px;
+  border-left: 5px solid #1F4D39;
+  text-align: left;
+  background-color: #eceaea;
+  color: #1F4D39;
+  box-shadow: 2px 2px 4px #dbdbdb;
+}
+.single-contact .contact-wrap .contact-form {
+  padding: 20px;
+  text-align: center;
+}
+@media (min-width: 48rem) {
+  .single-contact .contact-wrap .contact-form form {
+    padding: 30px;
+  }
+}
+.single-contact .contact-wrap .contact-form form input[type=text] {
+  width: 100%;
+  padding: 5px 10px;
+  font-size: medium;
+  border: none;
+  border-radius: 3px;
+  background: #ddf0ff;
+}
+.single-contact .contact-wrap .contact-form form .property {
+  width: 100%;
+  padding: 5px 10px;
+  font-size: medium;
+  border: none;
+  border-radius: 3px;
+  background: #fff !important;
+}
+.single-contact .contact-wrap .contact-form form input[name=btn_confirm],
+.single-contact .contact-wrap .contact-form form input[name=btn_submit],
+.single-contact .contact-wrap .contact-form form input[name=btn_back] {
+  margin-top: 10px;
+  padding: 5px 20px;
+  font-size: 0.8rem;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  border-radius: 3px;
+  box-shadow: 0 3px 0 #2887d1;
+  background: #4eaaf1;
+}
+.single-contact .contact-wrap .contact-form form input[name=btn_back] {
+  margin-right: 20px;
+  box-shadow: 0 3px 0 #777;
+  background: #999;
+}
+.single-contact .contact-wrap .contact-form form .dammy {
+  display: none;
+}
+.single-contact .contact-wrap .contact-form form .element_wrap {
+  margin-bottom: 10px;
+  padding: 10px 0;
+  border-bottom: 1px solid #ccc;
+  text-align: left;
+  font-size: 0.8rem;
+}
+.single-contact .contact-wrap .contact-form form .element_wrap label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+  width: 100%;
+}
+.single-contact .contact-wrap .contact-form form .element_wrap p {
+  display: block;
+  margin: 0;
+  text-align: left;
+  font-size: 0.8rem;
+}
+.single-contact .contact-wrap .contact-form form .element_wrap textarea {
+  width: 100%;
+  height: 200px;
+}
+.single-contact .contact-wrap .contact-form form .element_wrap span {
+  display: block;
+}
+.single-contact .contact-wrap .contact-form form .element_wrap .required {
+  display: inline;
+  margin-left: 10px;
+  color: red;
+  font-size: 0.7rem;
+}
+.single-contact .contact-wrap .contact-form .error_list {
+  padding: 10px 30px;
+  color: #ff2e5a;
+  font-size: 86%;
+  text-align: left;
+  border: 1px solid #ff2e5a;
+  border-radius: 5px;
+}

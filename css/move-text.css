@@ -1,0 +1,100 @@
+@charset "UTF-8";
+/*色の設定*/ /*レスポンシブル*/
+/*scss記述だと上手くいかず。CSSで記述しています*/
+@media (min-width: 64.375rem) {
+  .eachTextAnime {
+    display: block;
+    font-size: 5rem;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    text-shadow: 1px 1px 2px #000000;
+    margin-top: 15%;
+  }
+}
+@media (max-height: 53.125rem) {
+  .eachTextAnime {
+    display: block;
+    font-size: 5rem;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 10%;
+    text-shadow: 1px 1px 2px #000000;
+  }
+}
+@media (max-width: 64.375rem) {
+  .eachTextAnime {
+    display: block;
+    font-size: 4rem;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 20%;
+    text-shadow: 1px 1px 2px #000000;
+  }
+}
+@media (max-width: 57rem) {
+  .eachTextAnime {
+    display: block;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 30%;
+    text-shadow: 1px 1px 2px #000000;
+  }
+}
+@media (max-height: 40.625rem) {
+  .eachTextAnime {
+    display: none !important;
+  }
+}
+@media (max-width: 34.375rem) {
+  .eachTextAnime {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 30%;
+    text-shadow: 1px 1px 2px #000000;
+  }
+}
+
+.eachTextAnime span {
+  opacity: 0;
+}
+
+.eachTextAnime.appeartext span {
+  -webkit-animation: text_anime_on 1s ease-out forwards;
+          animation: text_anime_on 1s ease-out forwards;
+}
+
+@-webkit-keyframes text_anime_on {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes text_anime_on {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

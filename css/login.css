@@ -1,0 +1,20 @@
+@charset "UTF-8";
+/*色の設定*/ /*レスポンシブル*/
+#wpmem_login {
+  width: 100% !important;
+}
+@media (min-width: 48rem) {
+  #wpmem_login {
+    padding: 0 40px 0 40px !important;
+  }
+}
+
+#wpmem_reg {
+  width: 100% !important;
+  margin: 0 auto !important;
+}
+@media (min-width: 48rem) {
+  #wpmem_reg {
+    width: 90% !important;
+  }
+}

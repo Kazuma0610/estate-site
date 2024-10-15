@@ -1,0 +1,47 @@
+@charset "UTF-8";
+/*色の設定*/ /*レスポンシブル*/
+#comments {
+  margin-top: 50px;
+}
+#comments .com-p {
+  font-size: 1rem;
+}
+
+#respond {
+  margin-top: 50px;
+}
+
+#respond label {
+  display: block;
+}
+
+#respond input,
+#respond textarea {
+  width: 90%;
+}
+
+#respond input[type=submit] {
+  width: auto;
+}
+
+.says {
+  display: none;
+}
+
+.comment-author,
+.comment-meta {
+  display: inline-block;
+}
+
+.comment-form-cookies-consent {
+  display: none;
+}
+
+.form-submit {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.reply {
+  display: none;
+}

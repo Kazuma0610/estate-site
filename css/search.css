@@ -1,0 +1,106 @@
+@charset "UTF-8";
+/*色の設定*/ /*レスポンシブル*/
+.no-search {
+  text-align: center;
+}
+.no-search .no-search-p {
+  margin-top: 60px;
+}
+.no-search .top-link {
+  display: block;
+  margin: 30px 0;
+}
+
+/*indexのsearchのレイアウト*/
+.vkfs__call-filter-search-id-127 .vkfs__label-name {
+  color: #04384C;
+}
+
+/*rent-search.phpのレイアウト*/
+.search_sort_order_contents {
+  padding: 10px 20px;
+  margin: 20px 0px 20px 0px;
+  background-color: #e5eef7;
+}
+.search_sort_order_contents .sso_flex {
+  display: block;
+}
+@media (min-width: 48rem) {
+  .search_sort_order_contents .sso_flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.search_sort_order_contents .sso_flex .sso_text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  width: 50%;
+  border: 1px solid;
+  padding: 5px 20px;
+  margin-bottom: 20px;
+  background-color: #04384c;
+  color: #fff;
+}
+@media (min-width: 48rem) {
+  .search_sort_order_contents .sso_flex .sso_text {
+    width: 20%;
+    margin-bottom: 0px;
+  }
+}
+.search_sort_order_contents .simplefavorite-button {
+  display: none;
+}
+
+.vkfs__call-filter-search-id-133 .vkfs {
+  width: 100%;
+  margin-bottom: 0rem !important;
+}
+.vkfs__call-filter-search-id-133 .vkfs .vkfs__label-name {
+  font-size: 0.7rem;
+}
+.vkfs__call-filter-search-id-133 .vkfs .vkfs_submit {
+  display: none;
+  margin-bottom: 0rem;
+}
+.vkfs select:not(.does-not-exist) {
+  font-size: 0.8rem;
+  margin-bottom: 10px;
+  padding: 0.375rem 1.75rem;
+  min-width: 164px;
+}
+@media (min-width: 48rem) {
+  .vkfs select:not(.does-not-exist) {
+    margin-bottom: 0px;
+  }
+}
+
+.vkfs__call-filter-search-id-133 .vkfs .vkfs__block-id--52c49103-eb2f-47b3-b919-acbea6d75d06,
+.vkfs__call-filter-search-id-133 .vkfs .vkfs__block-id--19a59a8b-198e-48f2-b428-1c63380b3953,
+.vkfs__call-filter-search-id-133 .vkfs .vkfs__block-id--63f4fdd8-a1ba-41b2-9ba7-14bc03b51e9d,
+.vkfs__call-filter-search-id-133 .vkfs .vkfs__block-id--0ffc3f83-aca9-48f8-b1b8-8a572f0891ba,
+.vkfs__call-filter-search-id-133 .vkfs .vkfs__block-id--ca3c1af5-a9b8-46fe-8bff-508f7b54b835,
+.vkfs__call-filter-search-id-133 .vkfs .vkfs__block-id--154beed8-5972-40b4-9bb6-97e474ce4f38 {
+  display: none;
+}
+.vkfs__labels {
+  display: block !important;
+}
+@media (min-width: 48rem) {
+  .vkfs__labels {
+    display: flex !important;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+.vkfs__label-name {
+  margin-bottom: calc(var(--vk-size-text) * 0.2) !important;
+}
+
+.modal_btn_wrap {
+  text-align: center;
+  margin-bottom: 20px;
+}

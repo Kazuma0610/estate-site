@@ -1,0 +1,140 @@
+@charset "UTF-8";
+/*色の設定*/ /*レスポンシブル*/
+/*-------------------------------------------
+aside
+-------------------------------------------*/
+#sidebar {
+  width: 100%;
+  padding: 5px;
+}
+@media (min-width: 55rem) {
+  #sidebar {
+    width: 33%;
+    padding: 20px;
+  }
+}
+#sidebar .author {
+  text-align: center;
+  margin-bottom: 60px;
+  padding: 10px;
+}
+#sidebar .author img {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  margin-bottom: 30px;
+}
+#sidebar .author .side-title {
+  font-size: 1.125rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+#sidebar .author .profile {
+  font-size: 0.875rem;
+  text-align: left;
+}
+#sidebar .archive {
+  margin: 20px auto;
+  text-align: center;
+}
+#sidebar .archive .side-title {
+  text-align: left;
+  padding: 0px;
+}
+#sidebar .archive .wp-block-latest-posts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+}
+@media (min-width: 48rem) {
+  #sidebar .archive .wp-block-latest-posts {
+    justify-content: flex-start;
+  }
+}
+@media (min-width: 55rem) {
+  #sidebar .archive .wp-block-latest-posts {
+    display: block;
+    padding: 0px;
+  }
+}
+#sidebar .archive .wp-block-latest-posts li {
+  max-width: 150px;
+  font-size: 0.875rem;
+  /*border-bottom: solid  1px #777;*/
+  padding: 0px;
+  padding-bottom: 20px;
+  text-align: left;
+}
+#sidebar .archive .wp-block-latest-posts li:nth-child(4) {
+  padding-bottom: 0px;
+}
+@media (min-width: 55rem) {
+  #sidebar .archive .wp-block-latest-posts li {
+    max-width: 170px;
+  }
+}
+#sidebar .archive .wp-block-categories {
+  text-align: left;
+}
+#sidebar .archive .wp-block-categories li .children li {
+  padding-left: 20px;
+}
+#sidebar .archive .news-area-content-sd {
+  width: 100%;
+  text-align: left;
+}
+#sidebar .archive .news-area-content-sd h3 {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 20px;
+}
+#sidebar .archive .news-area-content-sd h3 .fa-newspaper {
+  margin-right: 5px;
+}
+#sidebar .archive .news-area-content-sd ul li {
+  padding-top: 20px;
+  padding-top: 10px;
+  border-bottom: 1px dotted;
+}
+#sidebar .archive .news-area-content-sd ul li .news_date {
+  font-size: 0.7rem;
+}
+#sidebar .archive .news-area-content-sd ul li .news_title {
+  font-size: 0.875rem;
+}
+
+/*ウィジェット内の変更*/
+.widget-title {
+  text-align: left;
+  margin-top: 20px;
+}
+.widget-title .fa-book {
+  margin-right: 5px;
+}
+.widget-title .fa-layer-group {
+  margin-right: 5px;
+}
+
+/*-------------------------------------------
+aside(RENT用）
+-------------------------------------------*/
+#sidebar-rent {
+  width: 100%;
+  padding: 15px;
+}
+@media (min-width: 55rem) {
+  #sidebar-rent {
+    width: 33%;
+    padding: 20px;
+  }
+}
+#sidebar-rent .archive {
+  margin: 0 auto;
+  text-align: center;
+}
+#sidebar-rent .archive .side-title {
+  text-align: left;
+  padding: 0px;
+}

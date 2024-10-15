@@ -1,0 +1,85 @@
+@charset "UTF-8";
+/*色の設定*/ /*レスポンシブル*/
+.contents .page-title {
+  margin: 0;
+}
+.contents .page-title-archive {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+.contents .archive-flex {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-bottom: 20px;
+}
+.contents .archive-flex .entry-title {
+  font-size: 0.8rem;
+}
+@media (min-width: 48rem) {
+  .contents .archive-flex .entry-title {
+    font-size: 1rem;
+  }
+}
+.contents .archive-flex .type-post {
+  width: calc(50% - 25px);
+}
+.contents .archive-flex .type-post .card__time {
+  font-size: 0.8rem;
+}
+@media (min-width: 48rem) {
+  .contents .archive-flex .type-post .card__time {
+    font-size: 1rem;
+  }
+}
+.contents .archive-flex .type-post .entry-footer {
+  font-size: 0.8rem;
+}
+@media (min-width: 48rem) {
+  .contents .archive-flex .type-post .entry-footer {
+    font-size: 1rem;
+  }
+}
+.contents .archive-flex .archive-flex-post {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-bottom: 20px;
+  margin-top: 30px;
+}
+.contents .archive-flex .archive-rent {
+  margin-top: -50px;
+}
+.contents .archive-flex .type-news {
+  width: calc(50% - 25px);
+}
+.contents .archive-flex .type-news .entry-title {
+  font-size: 0.8rem;
+}
+@media (min-width: 48rem) {
+  .contents .archive-flex .type-news .entry-title {
+    font-size: 1rem;
+  }
+}
+.contents .archive-flex .type-news .card__time {
+  font-size: 0.8rem;
+}
+@media (min-width: 48rem) {
+  .contents .archive-flex .type-news .card__time {
+    font-size: 1rem;
+  }
+}
+.contents .archive-flex .type-news .cat-links {
+  font-size: 0.8rem;
+}
+@media (min-width: 48rem) {
+  .contents .archive-flex .type-news .cat-links {
+    font-size: 1rem;
+  }
+}
+.contents .nav-links {
+  margin-top: 80px;
+  text-align: center;
+}

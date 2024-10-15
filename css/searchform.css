@@ -1,0 +1,35 @@
+@charset "UTF-8";
+/*色の設定*/ /*レスポンシブル*/
+.searchform {
+  line-height: 1;
+  position: relative;
+  margin: 30px 0;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.searchfield {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #bbb;
+  border-radius: 4px;
+  background-color: #efefef;
+}
+
+.searchsubmit {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  display: block;
+  padding: 0;
+  cursor: pointer;
+  transform: translateY(-50%);
+  color: #000;
+  border: none;
+  background: transparent;
+}
+
+.searchsubmit:hover {
+  opacity: 0.6;
+}

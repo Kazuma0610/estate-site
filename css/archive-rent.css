@@ -1,0 +1,281 @@
+@charset "UTF-8";
+/*色の設定*/ /*レスポンシブル*/
+/*スマホ版*/
+.only-sp {
+  display: block;
+}
+@media (min-width: 48rem) {
+  .only-sp {
+    display: none;
+  }
+}
+
+.archive-rent_article_sp {
+  border-top: 2px solid #999999;
+  padding-top: 10px;
+  font-size: 12px;
+}
+.archive-rent_article_sp .block-thumbnail-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 5px;
+}
+.archive-rent_article_sp .block-thumbnail-flex .lr_l, .archive-rent_article_sp .block-thumbnail-flex .lr_r {
+  width: calc(50% - 5px);
+  margin-left: 10px;
+}
+.archive-rent_article_sp .block-thumbnail-flex .lr_l .type, .archive-rent_article_sp .block-thumbnail-flex .lr_r .type {
+  border: 1px solid #6FBA2C;
+  color: #6FBA2C;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 3px;
+  font-size: 10px;
+  line-height: 1;
+  background-color: #FFFFFF;
+}
+.archive-rent_article_sp .detail .detail-flex {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+.archive-rent_article_sp .detail .detail-flex .bt-contents {
+  width: 50% !important;
+  margin-left: 10px;
+}
+.archive-rent_article_sp .detail .detail-flex .bt-contents .price {
+  font-size: 1rem;
+  font-weight: bold;
+  color: red;
+}
+.archive-rent_article_sp .detail .detail-flex .bt-contents .price .price-sub {
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: red;
+}
+.archive-rent_article_sp .detail .detail-flex .bt-contents .price .kanrihi {
+  font-size: 0.7rem;
+  font-weight: normal;
+  color: red;
+}
+.archive-rent_article_sp .detail .detail-flex .bt-contents .deposit-flex {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  padding: 5px;
+}
+.archive-rent_article_sp .detail .detail-flex .bt-contents .deposit-flex .deposit::before {
+  content: "敷";
+  border: 1px solid #c2c2c2;
+  background-color: #c2c2c2;
+  color: #000;
+  margin-right: 5px;
+  padding: 2px;
+}
+.archive-rent_article_sp .detail .detail-flex .bt-contents .deposit-flex .deposit2::before {
+  content: "礼";
+  border: 1px solid #f37e00;
+  background-color: #fff;
+  color: #f37e00;
+  margin-right: 5px;
+  padding: 2px;
+}
+.archive-rent_article_sp .detail .detail-flex .bt-contents .size-flex {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+}
+.archive-rent_article_sp .detail .bookmark-sp-list {
+  display: flex;
+  align-items: center;
+  margin-top: -25px;
+  margin-left: 10px;
+}
+@media (min-width: 48rem) {
+  .archive-rent_article_sp .detail .bookmark-sp-list {
+    display: none;
+  }
+}
+.archive-rent_article_sp .detail .bookmark-sp-list button {
+  color: #000;
+  padding: 5px;
+  font-size: 0.8rem;
+  border: 1px solid #000;
+  border-radius: 5px;
+}
+.archive-rent_article_sp .detail .bookmark-sp-list .bk-text {
+  position: relative;
+  display: inline-block;
+  margin: 1.5em 0 1.5em 15px;
+  padding: 7px 10px;
+  min-width: 120px;
+  max-width: 100%;
+  color: #555;
+  font-size: 16px;
+  background: #e0edff;
+}
+.archive-rent_article_sp .detail .bookmark-sp-list .bk-text::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -20px;
+  margin-top: -15px;
+  border: 15px solid transparent;
+  border-right: 15px solid #e0edff;
+}
+.archive-rent_article_sp .detail .bookmark-sp-list .bk-text p {
+  font-size: 0.6rem;
+}
+.archive-rent_article_sp .detail .bookmark-sp-list-out .bk-text {
+  margin: 15px;
+  padding: 5px;
+  border-left: 5px solid #000;
+  background: #f4f4f4;
+  width: 70%;
+  font-size: 0.7rem;
+}
+
+/*PCとタブレット版*/
+.only-tablet-pc {
+  display: none;
+}
+@media (min-width: 48rem) {
+  .only-tablet-pc {
+    display: block;
+  }
+}
+
+.archive-rent_article {
+  border-top: 2px solid #999999;
+  padding-top: 10px;
+  font-size: 12px;
+}
+.archive-rent_article .lr {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 0 5px 0 5px;
+  margin-bottom: 15px;
+}
+.archive-rent_article .lr .lr_l {
+  padding-top: 30px;
+  width: 24%;
+}
+.archive-rent_article .lr .lr_l img {
+  width: 100%;
+  height: auto;
+}
+.archive-rent_article .lr .lr_r {
+  width: 74%;
+}
+.archive-rent_article .lr .lr_r .type {
+  border: 1px solid #6FBA2C;
+  color: #6FBA2C;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 3px;
+  font-size: 10px;
+  line-height: 1;
+  background-color: #FFFFFF;
+}
+.archive-rent_article .lr .lr_r .renttitle {
+  margin-top: 10px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  line-height: 1.3;
+}
+.archive-rent_article .lr .lr_r .place {
+  margin-top: 10px;
+  border-top: 1px dotted #c2c2c2;
+  border-bottom: 1px dotted #c2c2c2;
+  padding: 5px 0;
+}
+.archive-rent_article .lr .lr_r .place ul {
+  display: table;
+  margin-bottom: 0;
+}
+.archive-rent_article .lr .lr_r .place ul li {
+  border-left: none;
+  padding-left: 0;
+  list-style: none;
+  display: table-cell;
+  vertical-align: top;
+  border-left: 1px dotted #c2c2c2;
+  box-sizing: border-box;
+  padding: 10px;
+}
+.archive-rent_article .lr .lr_r .bookmark-list {
+  display: flex;
+  align-items: center;
+}
+.archive-rent_article .lr .lr_r .bookmark-list .bk-text {
+  position: relative;
+  display: inline-block;
+  margin: 1.5em 0 1.5em 15px;
+  padding: 7px 10px;
+  min-width: 120px;
+  max-width: 100%;
+  color: #555;
+  background: #e0edff;
+}
+.archive-rent_article .lr .lr_r .bookmark-list .bk-text::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -25px;
+  margin-top: -15px;
+  border: 15px solid transparent;
+  border-right: 15px solid #e0edff;
+}
+.archive-rent_article .lr .lr_r .bookmark-list .bk-text p {
+  font-size: 0.7rem;
+}
+.archive-rent_article .lr .lr_r .bookmark-list-out .bk-text {
+  margin: 15px;
+  padding: 5px;
+  border-left: 5px solid #000;
+  background: #f4f4f4;
+  width: 70%;
+  font-size: 0.7rem;
+}
+.archive-rent_article .detail {
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+  margin-bottom: 50px;
+}
+.archive-rent_article .detail tr {
+  background-color: #eeeeee;
+}
+.archive-rent_article .detail th {
+  font-weight: normal;
+  padding: 10px 5px;
+  box-sizing: border-box;
+  color: #666666;
+  font-size: 0.8rem;
+  white-space: nowrap;
+  border-bottom: none;
+}
+.archive-rent_article .detail td {
+  vertical-align: middle;
+  padding: 10px 5px;
+  border-bottom: 1px solid #d9d9d9;
+  background-color: #fff;
+}
+.archive-rent_article .detail .rentrent {
+  color: #f37e00;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.archive-rent_article .detail .rent_detail {
+  font-size: 0.9rem;
+  font-weight: bold;
+}

@@ -1,0 +1,20 @@
+@charset "UTF-8";
+/*色の設定*/ /*レスポンシブル*/
+.page-404 {
+  text-align: center;
+}
+.page-404 .title-header {
+  font-size: 2rem;
+}
+@media (min-width: 48rem) {
+  .page-404 .title-header {
+    font-size: 5rem;
+  }
+}
+.page-404 .p-404 {
+  margin-top: 64px;
+}
+.page-404 .top-link {
+  display: block;
+  margin: 32px 0;
+}
