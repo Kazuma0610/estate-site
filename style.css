@@ -1,0 +1,460 @@
+@charset "utf-8";
+/*
+Theme Name: realestate-sample
+Author: Kazuma
+Description: realestate-sample theme
+Version： 6.5.2
+*/
+
+/*---------------サイトの基本設定---------------*/
+
+
+/*cssのリセット*/
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,
+blockquote,pre,abbr,address,cite,code,del,dfn,em,img,
+ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,
+ol,ul,li,fieldset,form,label,legend,table,caption,
+tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,
+figcaption,figure,footer,header,hgroup,menu,nav,section,
+summary,time,mark,audio,video {
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+  border: 0;
+  outline: 0;
+  background: transparent;
+}
+
+
+/*html&bodyの設定*/
+html{
+	font-size: 1rem;
+    overflow-y: scroll;
+}
+
+body{
+	font-family: "YakuHanJPs_Noto", "Roboto", "Noto Sans JP", "游ゴシック Medium", "游ゴシック体", "Yu Gothic Medium", "YuGothic", "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	margin: 0;
+	padding: 0;
+	line-height: 1.8;
+	width: 100%;
+    height: 100%;
+	overflow-x: hidden;
+}
+
+
+/* - -  h1.h2.h3....  - - */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    color: #000;
+  }
+
+
+/* -- a -- */
+a {
+	color: #333;
+	text-decoration: none;
+	outline: none;
+}
+
+a, a > img {
+	-webkit-transition: .2s;
+	-moz-transition: .2s;
+	-ms-transition: .2s;
+	-o-transition: .2s;
+	transition: .2s;
+}
+
+
+/* -- img -- */
+img {
+	max-width: 100%;
+	height: auto;
+	vertical-align: middle;
+}
+
+
+/* -- ul -- */
+ul {
+	list-style: none;
+}
+li{
+	list-style: none;
+}
+
+
+/* -- :hover -- */
+a:hover,
+button:hover,
+input[type="button"]:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+	cursor: pointer;
+}
+
+
+/* -- input --*/
+input[type="text"]{
+  font-size: 1rem;
+}
+input[type="submit"]{
+  padding: 8px;
+  border: #efefef;
+  color: #000;
+  background-color: aliceblue;
+}
+
+
+/*投稿・アーカイブ画面のカラム設定*/
+.container {
+  padding-top: 20px;
+}
+
+@media (min-width: 48rem) {
+  .two-columns .contents {
+    margin-bottom: 60px;
+  }
+}
+@media (min-width: 48rem) {
+  .two-columns {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+  }
+  .two-columns .contents {
+    flex: 1 1 auto;
+  }
+  .two-columns .sidebar {
+    flex: 0 0 250px;
+  }
+}
+
+
+/*ページネーションの設定*/
+.pagination ul{
+  display: flex;
+  justify-content: center;
+  gap:10px;
+  margin-top: 80px;
+}
+
+
+/*パンクズの設定*/
+.breadcrumb{
+	font-size: .625rem;
+	max-width: 1080px;
+	margin: 0 auto;
+	text-align: left;
+	background: #efefef;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+.breadcrumb p{
+	margin: 0 auto;
+	padding: 5px;
+}
+.breadcrumb span{
+	padding:0 10px 0 10px;
+}
+.breadcrumb span:nth-child(1){
+	padding-left: 0px;
+}
+@media (min-width: 700px) {
+	.breadcrumb{
+		margin-left: 40px;
+		margin-right: 40px;
+	}
+}
+@media (min-width: 880px) {
+	.breadcrumb{
+		font-size: 1rem;
+		width: 100%;
+		margin: 0 auto;
+		text-align: left;
+		background: #efefef;
+	}
+}
+
+
+/*-----------物件画面の写真のギャラリーの設定-------------*/
+
+/*--------------------SP版-----------------------------*/
+.bxslider-gallery-sp-only{
+	display: none;
+}
+@media (max-width: 48rem) {
+	.bxslider-gallery-sp-only{
+		display: block;
+	}
+}
+.bxslider1 .bxslider {
+	margin: 0 auto;
+}
+.bx-wrapper{
+	display: block!important;
+	position: relative!important;
+	padding-top: 85%!important;
+	margin-bottom: 40px!important;
+}
+.bx-viewport{
+	position: absolute!important;
+	top: 0px!important;
+	left: 50%!important;
+	transform: translateX(-50%)!important;
+	max-width: 100%!important;
+	max-height: 100%!important;
+}
+.bx-wrapper .bx-controls-direction a {
+    position: absolute;
+    top: 45%!important;
+    margin-top: -16px;
+    outline: 0;
+    width: 32px;
+    height: 32px;
+    text-indent: -9999px;
+    z-index: 9999;
+}
+.dtlslider_cstphoto-count-sp{
+	display: flex;
+	justify-content: space-between;
+	z-index: 9999;
+    position: relative;
+    color: #000;
+    padding-left: 10px;
+	padding-right: 10px;
+}
+/*ブックマーク登録*/
+.bookmark-sp-list {
+	display: flex;
+	align-items: center;
+	margin-top: -20px;
+	margin-left: 10px;
+  }
+  @media (min-width: 48rem) {
+	.bookmark-sp-list {
+	  display: none;
+	}
+}
+.bookmark-sp-list button {
+	color: #000;
+	padding: 5px;
+	font-size: 0.8rem;
+	border: 1px solid #000;
+	border-radius: 5px;
+}
+.bookmark-sp-list .bk-text {
+	position: relative;
+	display: inline-block;
+	margin: 1.5em 0 1.5em 15px;
+	padding: 7px 10px;
+	min-width: 120px;
+	max-width: 100%;
+	color: #555;
+	font-size: 16px;
+	background: #e0edff;
+}
+.bookmark-sp-list .bk-text::before {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: -20px;
+	margin-top: -15px;
+	border: 15px solid transparent;
+	border-right: 15px solid #e0edff;
+}
+.bookmark-sp-list .bk-text p {
+	font-size: 0.6rem;
+}
+.bookmark-sp-list-out .bk-text {
+	margin: 15px;
+	margin-left: 0px;
+	padding: 5px;
+	border-left: 5px solid #000;
+	background: #f4f4f4;
+	width: 70%;
+	font-size: 0.7rem;
+}
+.bx-wrapper{
+	z-index: 10!important;
+}
+
+/*----------PC（タブレット含む）---------------*/
+.pc-only{
+	display: block;
+}
+@media (max-width: 48rem) {
+	.pc-only{
+		display: none;
+	}
+}
+
+.swiper-gallery{
+	margin-top: 20px;
+}
+
+.p-myswiper {
+	position: relative;
+	width: 600px;
+	margin: 0 auto;
+  }
+  
+.p-myswiper .swiper-slide {
+	display: block;
+    position: relative;
+    padding-top: 75%;
+	transition-property: opacity, transform, -webkit-transform;
+	background-color: #fff;
+  }
+
+.swiper-slide img {
+	position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+.dtlslider_cstphoto-count{
+	display: flex;
+	justify-content: space-between;
+	z-index: 9999;
+    position: relative;
+    color: #000;
+	background-color: #efefef;
+    padding-left: 10px;
+	padding-right: 10px;
+  }
+
+.swiper-thumbs-container{
+	position: relative;
+}
+  
+.p-myswiper-thumbs {
+	position: relative;
+	overflow: hidden;
+	width: 500px;
+	margin: 20px auto;
+	margin-top: 30px;
+  }
+
+.p-myswiper-thumbs__slide{
+	opacity: 0.4;
+}
+
+.swiper-slide-thumb-active{
+	opacity: 1.0;
+}
+  
+.p-myswiper-thumbs .swiper-slide {
+	height: 100px;
+	cursor: pointer;
+  }
+  
+.p-myswiper-thumbs .swiper-scrollbar {
+	position: relative;
+	margin-top: 1.6rem;
+  }
+.p-myswiper-thumbs .swiper-scrollbar-drag {
+	height: 20px;
+	padding: 8px 0;
+	cursor: pointer;
+	background-color: var(--color-theme, #4B7CB6);
+	background-clip: content-box;
+  }
+.p-myswiper-thumbs .swiper-scrollbar::after {
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 4px;
+	margin: auto;
+	content: "";
+	background-color: #eee;
+  }
+  
+.swiper-thumbs-button-next {
+	position: absolute;
+	height: 95px;
+	width: 30px;
+	background-color: #4B7CB6;
+	right: 80px;
+	top: 0%;
+	border-radius: 0px;
+	z-index: 10;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	filter: drop-shadow(0 0 8px rgba(255, 255, 255, .7));
+  }
+@media (max-height: 40.625rem) {
+	.swiper-thumbs-button-next {
+		position: absolute;
+		right: 80px;
+	  }
+}
+  
+.swiper-thumbs-button-prev {
+	position: absolute;
+	height: 95px;
+	width: 30px;
+	background-color: #4B7CB6;
+	left: 80px;
+	top: 0%;
+	border-radius: 0px;
+	z-index: 10;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	filter: drop-shadow(0 0 8px rgba(255, 255, 255, .7));
+  }
+@media (max-height: 40.625rem) {
+	.swiper-thumbs-button-prev {
+		position: absolute;
+		left: 80px;
+	}
+}
+
+.main-pic-prev {
+	position: absolute;
+	height: 50px;
+	width: 50px;
+	font-size: 1rem;
+	background-color: #4B7CB6;
+	left: -60px;
+	top: 50%;
+	border-radius: 100px;
+	z-index: 10;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	filter: drop-shadow(0 0 8px rgba(255, 255, 255, .7));
+  }
+  
+.main-pic-next {
+	position: absolute;
+	height: 50px;
+	width: 50px;
+	font-size: 1rem;
+	background-color: #4B7CB6;
+	right: -60px;
+	top: 50%;
+	border-radius: 100px;
+	z-index: 10;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	filter: drop-shadow(0 0 8px rgba(255, 255, 255, .7));
+  }
+  
+* {
+	box-sizing: border-box;
+  }
+/*------------------------*/
